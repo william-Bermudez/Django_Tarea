@@ -6,13 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nelson - Portafolio</title>
-    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 
 <body>
     <nav class="barra-navegacion">
         <div class="contenedor-nav">
-
             <ul class="menu-nav">
                 <li><a href="{% url 'index' %}" class="enlace-nav">Home</a></li>
                 <li><a href="{% url 'william' %}" class="enlace-nav">William</a></li>
@@ -27,11 +26,10 @@
     <section class="hero-perfil">
         <div class="contenido-perfil">
             <div class="contenedor-imagen-perfil">
-                <img src="{% static "img/Nelson/nelson perfil.jpeg" %}" alt="Nelson">
+                <img src="{% static 'img/Nelson/nelson perfil.jpeg' %}" alt="Nelson">
             </div>
             <h1 class="nombre-perfil">Nelson Rivas</h1>
-                    <p class="profile-title">Desarrollador</p>
-
+            <p class="titulo-perfil">Desarrollador</p>
         </div>
     </section>
 
@@ -65,9 +63,9 @@
             <div class="cuadricula-proyectos">
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/Nelson/mosaico.jpeg" %}" alt="mosaico">
+                        <img src="{% static 'img/Nelson/mosaico.jpeg' %}" alt="mosaico">
                         <div class="superposicion-tarjeta">
-                            <span class="etiqueta-tarjeta">Hecho en Inskape</span>
+                            <span class="etiqueta-tarjeta">Hecho en Inkscape</span>
                         </div>
                     </div>
                     <div class="contenido-tarjeta">
@@ -84,9 +82,9 @@
 
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/Nelson/Tarjeta de presentacion.jpeg" %}" alt="targeta de presentación">
+                        <img src="{% static 'img/Nelson/Tarjeta de presentacion.jpeg' %}" alt="tarjeta de presentación">
                         <div class="superposicion-tarjeta">
-                            <span class="etiqueta-tarjeta">Hecho en Canvas</span>
+                            <span class="etiqueta-tarjeta">Hecho en Canva</span>
                         </div>
                     </div>
                     <div class="contenido-tarjeta">
@@ -103,13 +101,13 @@
 
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/Nelson/sesion fotografica.jpeg" %}" alt="sesion fotografica">
+                        <img src="{% static 'img/Nelson/sesion fotografica.jpeg' %}" alt="sesion fotografica">
                         <div class="superposicion-tarjeta">
                             <span class="etiqueta-tarjeta">Hecho en Figma</span>
                         </div>
                     </div>
                     <div class="contenido-tarjeta">
-                        <h3>sesión fotografica</h3>
+                        <h3>Sesión fotográfica</h3>
                         <p>Esta sesión fotográfica tuvo como propósito experimentar con la composición y la estética
                             visual a través de distintos ángulos y filtros. El objeto central fue un cuadro de Loki,
                             cuyo diseño y detalles permitieron explorar contrastes, luces y atmósferas diversas. Al
@@ -119,9 +117,10 @@
                             creatividad, práctica técnica y una reinterpretación visual del personaje.</p>
                     </div>
                 </div>
+
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/Nelson/collage 2.jpeg" %}" alt="collage 2">
+                        <img src="{% static 'img/Nelson/collage 2.jpeg' %}" alt="collage 2">
                         <div class="superposicion-tarjeta">
                             <span class="etiqueta-tarjeta">Hecho en Figma</span>
                         </div>
@@ -136,16 +135,18 @@
                             que evoca cariño, ternura y una sensación de alegría al verlo.</p>
                     </div>
                 </div>
+
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/Nelson/Captura de pantalla 2025-11-14 201745.png" %}" alt="Figma interfaz">
+                        <img src="{% static 'img/Nelson/Captura de pantalla 2025-11-14 201745.png' %}"
+                            alt="Figma interfaz">
                         <div class="superposicion-tarjeta">
                             <span class="etiqueta-tarjeta">Hecho en Figma</span>
                         </div>
                     </div>
                     <div class="contenido-tarjeta">
                         <h3>Diseño en Figma</h3>
-                        <p>Creacion de prototipo para la empresa vidri creado en figma:
+                        <p>Creación de prototipo para la empresa Vidri creado en Figma:
                             Para esta tarea desarrollé un prototipo de sistema web inspirado en la empresa Vidri, con el
                             objetivo de crear un diseño más moderno, organizado y funcional. El proceso incluyó la
                             selección de colores, distribución de elementos y mejora de la navegación para ofrecer una
@@ -154,29 +155,27 @@
                             accesibilidad y la eficiencia en la búsqueda de productos. El resultado es una propuesta que
                             combina innovación, orden y una estética renovada adaptada a las necesidades del usuario.
                             <a href="https://www.figma.com/proto/whgeavniOSBxV6IBarLqDb/Prototipo-de-mejoras-de-dise%C3%B1o-digital?node-id=40-942&starting-point-node-id=40%3A942"
-                                target="_blank" rel="link figma">Click en Figma para ver completo</a>
+                                target="_blank" rel="noopener noreferrer">Ver proyecto completo en Figma</a>
                         </p>
                     </div>
                 </div>
 
-
-
                 <div class="tarjeta">
                     <div class="imagen-tarjeta imagen-comparacion">
                         <div class="imagen-antes">
-                            <img src="{% static "img/Nelson/foto.jpeg" %}" alt="foto">
-
+                            <img src="{% static 'img/Nelson/foto.jpeg' %}" alt="foto">
+                            <span class="etiqueta-comparacion">Antes</span>
                         </div>
                         <div class="imagen-despues">
-                            <img src="{% static "img/Nelson/foto 1.jpeg" %}" alt="foto 1">
-
+                            <img src="{% static 'img/Nelson/foto 1.jpeg' %}" alt="foto 1">
+                            <span class="etiqueta-comparacion">Después</span>
                         </div>
                         <div class="superposicion-tarjeta">
                             <span class="etiqueta-tarjeta">Hecho en Photoshop</span>
                         </div>
                     </div>
                     <div class="contenido-tarjeta">
-                        <h3>sesión de fotografía</h3>
+                        <h3>Sesión de fotografía</h3>
                         <p>Esta sesión fotográfica se realizó bajo la categoría de fútbol, como parte de una actividad
                             destinada a aplicar los aprendizajes adquiridos en la clase de Diseño Gráfico. Utilizando
                             herramientas como Photoshop, el objetivo fue experimentar con la edición, el color y la
@@ -187,12 +186,11 @@
                     </div>
                 </div>
 
-
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/Nelson/Manual.png" %}" alt="manual">
+                        <img src="{% static 'img/Nelson/Manual.png' %}" alt="manual">
                         <div class="superposicion-tarjeta">
-                            <span class="etiqueta-tarjeta">Hecho en Canvas</span>
+                            <span class="etiqueta-tarjeta">Hecho en Canva</span>
                         </div>
                     </div>
                     <div class="contenido-tarjeta">
@@ -206,21 +204,20 @@
                             aplicaciones visuales, garantizando que la esencia de Smile Shoes se refleje en cada diseño
                             y comunicación.
                             <a href="https://www.canva.com/design/DAGz84BYAL8/vEUqclj2RqAe-rDkNhg9Tg/edit"
-                                target="_blank" rel="link figma">Click en Canvas para ver completo</a>
+                                target="_blank" rel="noopener noreferrer">Ver manual completo en Canva</a>
                         </p>
                     </div>
                 </div>
 
-
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/Nelson/proximamente.jpeg" %}" alt="proximamente">
+                        <img src="{% static 'img/Nelson/proximamente.jpeg' %}" alt="proximamente">
                         <div class="superposicion-tarjeta">
                             <span class="etiqueta-tarjeta">Hecho en Photoshop</span>
                         </div>
                     </div>
                     <div class="contenido-tarjeta">
-                        <h3>Baner</h3>
+                        <h3>Banner</h3>
                         <p>Este banner fue diseñado utilizando Photoshop como parte de una práctica orientada a
                             fortalecer habilidades en composición, edición y diseño visual. El proceso incluyó la
                             selección de colores, tipografías y elementos gráficos que permitieran transmitir un mensaje
@@ -231,35 +228,31 @@
                         </p>
                     </div>
                 </div>
-
-
                 <div class="tarjeta">
-                    <div class="imagen-tarjeta video-tarjeta">
-                        <iframe src="https://www.youtube.com/embed/_G0Qppd8S8w" title="YouTube video player"
-                            frameborder="0"
+                    <div class="video-tarjeta">
+                        <iframe width="640" height="315"
+                            src="https://www.youtube.com/embed/_G0Qppd8S8w?si=Be0Hy1VKd13KkHJS"
+                            title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen>
-                        </iframe>
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="contenido-tarjeta">
                         <h3>Narración de partido de futbol</h3>
-                        <p>Para practicar la edición de audio y video se nos pidio hace ese video.</p>
+                        <p>Video narrado y editado del partido de fútbol</p>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
-
-
-
 
     <footer class="pie-pagina">
         <div class="contenido-pie">
             <p>&copy; 2025 W.V.E.N.F. Innovation Group</p>
             <div class="redes-sociales">
-                <p> Redes Sociales De Nelson Rivas </p>
+                <p>Redes Sociales De Nelson Rivas</p>
                 <a href="https://www.instagram.com/riv._.04?igsh=MXB0ZGp6NHQxczExcg==" target="_blank"
-                    class="enlace-red-social" title="Instagram">
+                    rel="noopener noreferrer" class="enlace-red-social" title="Instagram">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                         <path
                             d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
@@ -267,59 +260,58 @@
                 </a>
             </div>
         </div>
-        <div class="reproductor-musica" id="reproductorMusica">
-            <button class="btn-minimizar" onclick="toggleReproductor()" id="btnToggle">▼</button>
-
-            <div class="reproductor-header">
-                <div class="icono-musica" onclick="toggleReproductor()">♪</div>
-                <div class="info-cancion">
-                    <div class="nombre-cancion">Música de Fondo</div>
-                    <div class="artista-cancion">Artista</div>
-                </div>
-            </div>
-
-            <div class="controles-reproductor">
-                <button class="btn-control" onclick="retroceder()">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M11 18V6l-8.5 6 8.5 6zm.5-6l8.5 6V6l-8.5 6z" />
-                    </svg>
-                </button>
-
-                <button class="btn-control btn-play-pause" onclick="togglePlay()" id="btnPlay">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" id="iconoPlay">
-                        <path d="M8 5v14l11-7z" />
-                    </svg>
-                </button>
-
-                <button class="btn-control" onclick="adelantar()">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M4 18l8.5-6L4 6v12zm9-12v12l8.5-6L13 6z" />
-                    </svg>
-                </button>
-            </div>
-
-            <div class="barra-progreso" onclick="cambiarProgreso(event)">
-                <div class="progreso-actual" id="progresoActual"></div>
-            </div>
-
-            <div class="tiempo-reproductor">
-                <span id="tiempoActual">0:00</span>
-                <span id="tiempoTotal">0:00</span>
-            </div>
-
-            <div class="control-volumen">
-                <span class="icono-volumen">🔊</span>
-                <input type="range" min="0" max="100" value="40" class="slider-volumen" id="sliderVolumen"
-                    oninput="cambiarVolumen(this.value)">
-            </div>
-
-            <audio id="audioPlayer" src="{% static "audio/tu-musica.mp3" %}"></audio>
-        </div>
-
-
     </footer>
 
-    <script src="{% static "js/script.js" %}"></script>
+    <div class="reproductor-musica" id="reproductorMusica">
+        <button class="btn-minimizar" onclick="toggleReproductor()" id="btnToggle">▼</button>
+
+        <div class="reproductor-header">
+            <div class="icono-musica" onclick="toggleReproductor()">♪</div>
+            <div class="info-cancion">
+                <div class="nombre-cancion">Música de Fondo</div>
+                <div class="artista-cancion">Artista</div>
+            </div>
+        </div>
+
+        <div class="controles-reproductor">
+            <button class="btn-control" onclick="retroceder()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11 18V6l-8.5 6 8.5 6zm.5-6l8.5 6V6l-8.5 6z" />
+                </svg>
+            </button>
+
+            <button class="btn-control btn-play-pause" onclick="togglePlay()" id="btnPlay">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" id="iconoPlay">
+                    <path d="M8 5v14l11-7z" />
+                </svg>
+            </button>
+
+            <button class="btn-control" onclick="adelantar()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M4 18l8.5-6L4 6v12zm9-12v12l8.5-6L13 6z" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="barra-progreso" onclick="cambiarProgreso(event)">
+            <div class="progreso-actual" id="progresoActual"></div>
+        </div>
+
+        <div class="tiempo-reproductor">
+            <span id="tiempoActual">0:00</span>
+            <span id="tiempoTotal">0:00</span>
+        </div>
+
+        <div class="control-volumen">
+            <span class="icono-volumen">🔊</span>
+            <input type="range" min="0" max="100" value="40" class="slider-volumen" id="sliderVolumen"
+                oninput="cambiarVolumen(this.value)">
+        </div>
+
+        <audio id="audioPlayer" src="{% static 'audio/tu-musica.mp3' %}"></audio>
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 
 </html>

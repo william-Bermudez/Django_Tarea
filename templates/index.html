@@ -6,14 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio del Equipo</title>
-    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 
 <body>
 
     <nav class="barra-navegacion">
         <div class="contenedor-nav">
-
             <ul class="menu-nav">
                 <li><a href="{% url 'index' %}" class="enlace-nav activo">Home</a></li>
                 <li><a href="{% url 'william' %}" class="enlace-nav">William</a></li>
@@ -48,7 +47,7 @@
             <div class="cuadricula-proyectos">
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/dibujo.png" %}" alt="dibujo">
+                        <img src="{% static 'img/dibujo.png' %}" alt="dibujo">
                         <div class="superposicion-tarjeta">
                             <span class="etiqueta-tarjeta">Hecho en Inskape</span>
                         </div>
@@ -61,7 +60,7 @@
 
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/Victor/fondo de zelda.png" %}" alt="fondo">
+                        <img src="{% static 'img/Victor/fondo de zelda.png' %}" alt="fondo">
                         <div class="superposicion-tarjeta">
                             <span class="etiqueta-tarjeta">Hecho en Photoshop</span>
                         </div>
@@ -74,7 +73,7 @@
 
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/Fran/astracto.jpeg" %}" alt="astracto">
+                        <img src="{% static 'img/Fran/astracto.jpeg' %}" alt="astracto">
                         <div class="superposicion-tarjeta">
                             <span class="etiqueta-tarjeta">Hecho en Padlet</span>
                         </div>
@@ -87,7 +86,7 @@
 
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/Nelson/sesion fotografica.jpeg" %}" alt="sesion">
+                        <img src="{% static 'img/Nelson/sesion fotografica.jpeg' %}" alt="sesion">
                         <div class="superposicion-tarjeta">
                             <span class="etiqueta-tarjeta">Hecho en Figma</span>
                         </div>
@@ -100,7 +99,7 @@
 
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/Emely/mosaico 2.jpeg" %}" alt="mosaico 2">
+                        <img src="{% static 'img/Emely/mosaico 2.jpeg' %}" alt="mosaico 2">
                         <div class="superposicion-tarjeta">
                             <span class="etiqueta-tarjeta">Hecho en Inskape</span>
                         </div>
@@ -112,15 +111,16 @@
                 </div>
 
                 <div class="tarjeta">
-                    <div class="imagen-tarjeta video-tarjeta">
-                        <iframe src="https://www.youtube.com/embed/_G0Qppd8S8w" title="YouTube video player"
-                            frameborder="0"
+                    <div class="video-tarjeta">
+                        <iframe width="640" height="315"
+                            src="https://www.youtube.com/embed/_G0Qppd8S8w?si=Be0Hy1VKd13KkHJS"
+                            title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen>
-                        </iframe>
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="contenido-tarjeta">
                         <h3>Narración de partido de futbol</h3>
+                        <p>Video narrado y editado del partido de fútbol</p>
                     </div>
                 </div>
             </div>
@@ -138,8 +138,7 @@
             <div class="cuadricula-proyectos">
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/ilustrator-removebg-preview.png" %}" alt="IA">
-
+                        <img src="{% static 'img/ilustrator-removebg-preview.png' %}" alt="IA">
                     </div>
                     <div class="contenido-tarjeta">
                         <h3>Adobe Ilustrator</h3>
@@ -150,13 +149,13 @@
 
                             Esto significa que puedes escalar (agrandar o achicar) un diseño hecho en Illustrator a
                             cualquier tamaño, desde un pequeño ícono para una app hasta un anuncio espectacular gigante,
-                            y nunca perderá calidad ni se verá pixelado..</p>
+                            y nunca perderá calidad ni se verá pixelado.</p>
                     </div>
                 </div>
 
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/inskape.png" %}" alt="inskape">
+                        <img src="{% static 'img/inskape.png' %}" alt="inskape">
                     </div>
                     <div class="contenido-tarjeta">
                         <h3>Inkscape</h3>
@@ -174,7 +173,7 @@
 
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/Photoshop-logo.png" %}" alt="Adobe Photoshop">
+                        <img src="{% static 'img/Photoshop-logo.png' %}" alt="Adobe Photoshop">
                     </div>
                     <div class="contenido-tarjeta">
                         <h3>Adobe Photoshop</h3>
@@ -187,11 +186,9 @@
                     </div>
                 </div>
 
- 
-
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/Figma-Logo.png" %}" alt="Figma">
+                        <img src="{% static 'img/Figma-Logo.png' %}" alt="Figma">
                     </div>
                     <div class="contenido-tarjeta">
                         <h3>Figma</h3>
@@ -207,7 +204,7 @@
 
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/freepik_logo_icon_170123.png" %}" alt="Freepik">
+                        <img src="{% static 'img/freepik_logo_icon_170123.png' %}" alt="Freepik">
                     </div>
                     <div class="contenido-tarjeta">
                         <h3>Freepik</h3>
@@ -222,7 +219,7 @@
 
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/padlet-logo-.png" %}" alt="padlet">
+                        <img src="{% static 'img/padlet-logo-.png' %}" alt="padlet">
                     </div>
                     <div class="contenido-tarjeta">
                         <h3>Padlet</h3>
@@ -243,7 +240,7 @@
 
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/canva logo.png" %}" alt="Canva">
+                        <img src="{% static 'img/canva logo.png' %}" alt="Canva">
                     </div>
                     <div class="contenido-tarjeta">
                         <h3>Canva</h3>
@@ -258,12 +255,13 @@
                             aprendizaje, Canva te da miles de plantillas listas para usar.</p>
                     </div>
                 </div>
+
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/CapCut-Logo.png" %}" alt="CapCut">
+                        <img src="{% static 'img/CapCut-Logo.png' %}" alt="CapCut">
                     </div>
                     <div class="contenido-tarjeta">
-                        <h3>CapCup</h3>
+                        <h3>CapCut</h3>
                         <p>CapCut es una aplicación de edición de video todo-en-uno, increíblemente popular, que
                             pertenece a la misma compañía que TikTok (ByteDance).
 
@@ -284,9 +282,10 @@
                             convirtiéndose en una herramienta muy versátil.</p>
                     </div>
                 </div>
+
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/Audacity-Logo.png" %}" alt="Audacity">
+                        <img src="{% static 'img/Audacity-Logo.png' %}" alt="Audacity">
                     </div>
                     <div class="contenido-tarjeta">
                         <h3>Audacity</h3>
@@ -308,9 +307,10 @@
                             Añadir efectos (como eco, reverberación, cambiar el tono o la velocidad).</p>
                     </div>
                 </div>
+
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/HTML5_logo_and_wordmark.svg.png" %}" alt="html">
+                        <img src="{% static 'img/HTML5_logo_and_wordmark.svg.png' %}" alt="html">
                     </div>
                     <div class="contenido-tarjeta">
                         <h3>HTML</h3>
@@ -324,9 +324,10 @@
                             Piensa en HTML como el esqueleto de tu sitio web.</p>
                     </div>
                 </div>
+
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/css.png" %}" alt="Css">
+                        <img src="{% static 'img/css.png' %}" alt="Css">
                     </div>
                     <div class="contenido-tarjeta">
                         <h3>CSS</h3>
@@ -341,9 +342,10 @@
                             distancia entre el sofá y la mesa, y cómo se ve todo.</p>
                     </div>
                 </div>
+
                 <div class="tarjeta">
                     <div class="imagen-tarjeta">
-                        <img src="{% static "img/JavaScript-Logo.jpg" %}" alt="JavaScript">
+                        <img src="{% static 'img/JavaScript-Logo.jpg' %}" alt="JavaScript">
                     </div>
                     <div class="contenido-tarjeta">
                         <h3>JavaScript</h3>
@@ -359,10 +361,10 @@
 
                             JavaScript: Es la electricidad, la plomería y todo lo que "funciona" en la casa. Es lo que
                             hace que el interruptor de luz (button) realmente encienda la luz (muestre un menú), que
-                                el timbre funcione, o que la puerta del garaje se abra.
+                            el timbre funcione, o que la puerta del garaje se abra.
 
-                                Mientras HTML y CSS definen la apariencia (lo que ves), JavaScript define la
-                                funcionalidad (lo que puedes hacer).</p>
+                            Mientras HTML y CSS definen la apariencia (lo que ves), JavaScript define la
+                            funcionalidad (lo que puedes hacer).</p>
                     </div>
                 </div>
             </div>
@@ -374,7 +376,6 @@
             <p>&copy; 2025 W.V.E.N.F. Innovation Group</p>
         </div>
     </footer>
-
 
     <div class="reproductor-musica" id="reproductorMusica">
         <button class="btn-minimizar" onclick="toggleReproductor()" id="btnToggle">▼</button>
@@ -422,10 +423,10 @@
                 oninput="cambiarVolumen(this.value)">
         </div>
 
-        <audio id="audioPlayer" src="{% static "audio/tu-musica.mp3" %}"></audio>
+        <audio id="audioPlayer" src="{% static 'audio/tu-musica.mp3' %}"></audio>
     </div>
 
-    <script src="{% static "js/script.js" %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 
 </html>

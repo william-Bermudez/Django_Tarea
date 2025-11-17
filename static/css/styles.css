@@ -252,10 +252,6 @@ body {
     animation-delay: 0.6s;
 }
 
-.tarjeta:nth-child(6) {
-    animation-delay: 0.6s;
-}
-
 .tarjeta:hover {
     transform: translateY(-15px);
     box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
@@ -268,26 +264,35 @@ body {
     background: transparent;
 }
 
-.imagen-tarjeta img,
-.imagen-tarjeta iframe {
+/* Solo para imágenes normales */
+.imagen-tarjeta img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     transition: transform 0.6s ease, filter 0.3s ease;
 }
 
-.tarjeta:hover .imagen-tarjeta img,
-.tarjeta:hover .imagen-tarjeta iframe {
+.tarjeta:hover .imagen-tarjeta img {
     transform: scale(1.1);
     filter: brightness(1.1);
 }
 
-
+/* Estilos específicos para tarjetas de video */
 .video-tarjeta {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
     background: #000;
 }
 
 .video-tarjeta iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
     display: block;
 }
 
@@ -699,6 +704,7 @@ body {
     animation: pulsar 2s infinite;
     margin: 0;
 }
+
 @keyframes pulsar {
 
     0%,
@@ -795,10 +801,3 @@ body {
         font-size: 2.5rem;
     }
 }
-.titulo-perfil {
-    font-size: 1.5rem;
-    opacity: 0.9;
-    animation: aparecerArriba 0.8s ease 0.4s backwards;
-}
-
-
